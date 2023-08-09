@@ -2,7 +2,7 @@ import express from 'express'
 import cors from 'cors'
 import dotenv from 'dotenv'
 import { HashManager } from './services/HashManager'
-import { userRouter } from './routers/UserRouter'
+import { userRouter } from './routers/userRouter'
 import { postRouter } from './routers/postRouter'
 
 dotenv.config()
