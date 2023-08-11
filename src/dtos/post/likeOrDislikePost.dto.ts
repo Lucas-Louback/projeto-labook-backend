@@ -8,8 +8,8 @@ export interface LikeOrDislikePostInputDTO {
 
 export type LikeOrDislikePostOutputDTO = undefined
 
-export const LikeOrDislikePostchema = z.object({
+export const LikeOrDislikePostSchema = z.object({
     postId: z.string().min(1),
     token: z.string().min(1),
     like: z.boolean()
-})
+}).transform(data => data as LikeOrDislikePostInputDTO)
